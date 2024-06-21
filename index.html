@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examen</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function salir(){
+            window.close();
+        }
+        function calcular(){
+            
+        }
+        function limpiar(){
+            document.getElementById("txtp1").value="";
+            document.getElementById("txtp2").value="";
+            document.getElementById("txtp3").value="";
+            document.getElementById("txtpp").value="";
+            document.getElementById("txtfinal").value="";
+            document.getElementById("txtpro").value="";
+        }
+
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="igm/certus.png" alt="">
+            </td>
+            <td style="text-align: right;">www.certus.edu.pe</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="igm/imagen.jpg" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size: 40px; color: blue;">lenguajes para el desarrollo y soporte de sistemas</td>
+            <td>
+                <button>
+                    <img src="igm/cerrarsesion.png" alt="" onclick="salir();">
+                </button>
+            </td>
+        </tr>
+    </table>
+    <h1>PROMEDIO FINAL</h1>
+    <table class="tablita">
+        <tr>
+            <td>practica 01</td>
+            <td>
+                <input type="number" min="1" max="20" id="txtp1" value="00">
+            </td>
+        </tr>
+        <tr>
+            <td>practica 02</td>
+            <td>
+                <input type="number" min="1" max="20" id="txtp2" value="00">
+            </td>
+        </tr>
+        <tr>
+            <td>practica 03</td>
+            <td>
+                <input type="number" min="1" max="20" id="txtp3" value="00">
+            </td>
+        </tr>
+        <tr>
+            <td>promedio pp</td>
+            <td>
+                <input type="number" min="1" max="20" id="txtpp" value="00">
+            </td>
+        </tr>
+        <tr>
+            <td>ex. final</td>
+            <td>
+                <input type="number" min="1" max="20" id="txtfinal" value="00">
+            </td>
+        </tr>
+        <tr>
+            <td>promedio final</td>
+            <td>
+                <input type="number" min="1" max="20" id="txtpro" value="00">
+            </td>
+        </tr>
+    </table>
+    <table class="tablita">
+        <tr>
+            <td>
+                <button onclick="calcular();">calcular</button>
+                <button onclick="limpiar();">limpiar</button>
+                <button onclick="imprimir();">imprimir</button>
+            </td>
+        </tr>
+    </table>
+    <h2>autor: alessandro garcia</h2>
+
+    
+    
+</body>
+</html>
